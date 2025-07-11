@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkopan Press Archives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="headline">Merkopan Press Archives</h1>
+        <p>The Record of Realities</p>
+    </header>
+    <main>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search articles by title or content...">
+        </div>
+        <div id="tabs-container">
+            <!-- Tab buttons will be loaded here by JavaScript -->
+        </div>
+        <div id="articles-display-area">
+            <!-- Newspaper articles, grouped by source in separate scrollable sections, will be loaded here by JavaScript -->
+            <p class="loading-message">Loading newspapers...</p>
+        </div>
+    </main>
+    <footer>
+        <p> © Merkopan Press Archives, 2025. All rights to the Suzerain universe, characters, and related content are owned by Torpor Games. This archive is a fan-made project. No copyright infringement is intended. All original content is released under a Creative Commons Attribution license (CC BY 4.0), with credit requested but not required. Created by: TaPingvinLahkoLeti/ThisPenguinCanFly</p>
+    </footer>
+    <div id="game-overlay">
+        <div class="overlay-content">
+            <h2>Support Torpor Games!</h2>
+            <p>The Merkopan Press Archives exist thanks to the incredible work of the team at Torpor Games. Please consider purchasing the original game to support and honor their creativity.</p>
+            <a href="https://store.steampowered.com/app/1207650/Suzerain/" target="_blank" class="buy-button">Buy the Game</a>
+            <button class="dismiss-button">Dismiss</button>
+        </div>
+    </div>
+    <script>
+    document.querySelector(".dismiss-button").addEventListener("click", () => {
+        document.getElementById("game-overlay").style.display = "none";
+    });
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
